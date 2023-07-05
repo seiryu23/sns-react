@@ -64,9 +64,9 @@ const Login = () => {
                                 autoComplete="email"
                                 required
                                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                onChange={(e: React.FormEvent<HTMLFormElement>) => 
+                                onChange={(e: React.ChangeEvent<HTMLInputElement>): void => {
                                     setEmail(e.target.value)
-                                }
+                                }}
                             />
                         </div>
                         <div className="mt-6">
@@ -83,9 +83,9 @@ const Login = () => {
                                 autoComplete="current-password"
                                 required
                                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                onChange={(e: React.FormEvent<HTMLFormElement>) => 
+                                onChange={(e: React.ChangeEvent<HTMLInputElement>): void => {
                                     setPassword(e.target.value)
-                                }
+                                }}
                             />
                         </div>
                         <div className="mt-6">
